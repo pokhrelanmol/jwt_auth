@@ -1,0 +1,34 @@
+      GET http://localhost:3001
+      Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2Mzk3MjU3OTgsImV4cCI6MTYzOTcyNTg1OCwiYXVkIjoiNjFiYjNhNzVlZjQ1Zjc2NGQ3MzE4NjUzIn0.s9WInRV6-kREil7B3fQho82LlMX-TlKEmyNXd7ueYAg      
+      
+###
+POST http://localhost:3001/auth/register
+Content-Type: application/json
+
+{ 
+      "email":"johncena@gmail.com",
+      "password":"12345678"
+}
+###
+POST http://localhost:3001/auth/login
+Content-Type: application/json
+
+{ 
+      "email":"johneey@gmail.com",
+      "password":"12345678"
+}
+###
+POST http://localhost:3001/auth/refresh-token
+Content-Type: application/json
+
+{
+      "refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2Mzk4NDEwOTAsImV4cCI6MTY3MTM5ODY5MCwiYXVkIjoiNjFiYzY1NTM4YTQxOTFjYTk2MTYxM2E3In0.leSjGIKnUJDnDsfzxBwbIn9McXjPGtplPOIAW17iL9Y"
+}
+###
+DELETE  http://localhost:3001/auth/logout
+Content-Type: application/json
+
+{
+      "refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2Mzk4NDExMDUsImV4cCI6MTY3MTM5ODcwNSwiYXVkIjoiNjFiYzY1NTM4YTQxOTFjYTk2MTYxM2E3In0.j1x8vRLpkSxw0u0bKjL9Z8w6pD60jcgyZ6YpuxbxwKE"
+}
+
